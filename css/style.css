@@ -1,39 +1,3 @@
-/*
-  Template Name: Daily Shop
-  Author : MarkUps
-  Author URI: http://www.markups.io/
-  Version: 1.0
-  Tags: light, white, ecommerce, online store, multi page, custom-colors, Bootstrap,responsive, html5, css3, Sass, template, web template
-
-*/
-
-/* Table of Content
-==================================================
-#BASIC TYPOGRAPHY
-#HEADER SECTION
-#NAVBAR SECTION
-#SLIDER SECTION
-#PROMO SECTION
-#PRODUCT SECTION
-#BANNER SECTION
-#POPULAR SECTION
-#SUPPORT SECTION
-#TESTIMONIAL SECTION
-#LATEST BLOG SECTION
-#CLIENT BRAND SECTION
-#PRODUCT PAGE
-#PRODUCT DETAILS PAGE
-#CART VIEW PAGE
-#CHECKOUT PAGE
-#MY ACCOUNT  PAGE
-#BLOG ARCHIVE  PAGE
-#BLOG DETAILS  PAGE
-#CONTACT  PAGE
-#ERROR  PAGE
-#FOOTER SECTION
-#RESPONSIVE DESIGN
-
-*/
 
 /* BASE - Base tyles, Variables, Mixins, etc. */
 body {
@@ -42,6 +6,9 @@ body {
   color: #333333;
   font-size: 16px;
   overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  display: none; 
 }
 
 .no-padding {
@@ -82,6 +49,9 @@ img {
   border: none;
   width: 100%;
   height: auto;
+}
+.little-bit{
+  font-size: 18px;
 }
 
 .aa-primary-btn {
@@ -248,10 +218,10 @@ img {
 }
 #aa-header .aa-header-top .aa-header-top-left .aa-language .btn img {
   display: inline;
-  height: 10px;
+  height: 16px;
   margin-right: 5px;
   margin-top: -2px;
-  width: 12px;
+  width: 16px;
 }
 #aa-header .aa-header-top .aa-header-top-left .aa-language .dropdown-menu {
   border-radius: 0;
@@ -261,10 +231,10 @@ img {
   font-size: 12px;
 }
 #aa-header .aa-header-top .aa-header-top-left .aa-language .dropdown-menu a img {
-  height: 10px;
+  height: 16px;
   margin-right: 5px;
   margin-top: -2px;
-  width: 12px;
+  width: 16px;
 }
 #aa-header .aa-header-top .aa-header-top-left .aa-language .dropdown-menu:after, #aa-header .aa-header-top .aa-header-top-left .aa-language .dropdown-menu:before {
   bottom: 100%;
@@ -292,48 +262,7 @@ img {
   border-right: 1px solid #ccc;
   float: left;
 }
-#aa-header .aa-header-top .aa-header-top-left .aa-currency .btn {
-  font-size: 12px;
-}
-#aa-header .aa-header-top .aa-header-top-left .aa-currency .btn i {
-  display: inline;
-  font-size: 12px;
-  margin-right: 3px;
-}
-#aa-header .aa-header-top .aa-header-top-left .aa-currency .dropdown-menu {
-  border-radius: 0;
-  min-width: 110px;
-}
-#aa-header .aa-header-top .aa-header-top-left .aa-currency .dropdown-menu a {
-  font-size: 12px;
-}
-#aa-header .aa-header-top .aa-header-top-left .aa-currency .dropdown-menu a i {
-  display: inline;
-  font-size: 12px;
-  margin-right: 3px;
-}
-#aa-header .aa-header-top .aa-header-top-left .aa-currency .dropdown-menu:after, #aa-header .aa-header-top .aa-header-top-left .aa-currency .dropdown-menu:before {
-  bottom: 100%;
-  left: 43%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-#aa-header .aa-header-top .aa-header-top-left .aa-currency .dropdown-menu:after {
-  border-color: rgba(255, 255, 255, 0);
-  border-bottom-color: #fff;
-  border-width: 6px;
-  margin-left: 0px;
-}
-#aa-header .aa-header-top .aa-header-top-left .aa-currency .dropdown-menu:before {
-  border-color: rgba(221, 221, 221, 0);
-  border-bottom-color: #ddd;
-  border-width: 8px;
-  margin-left: -2px;
-}
+
 #aa-header .aa-header-top .aa-header-top-left .cellphone {
   border-right: 1px solid #ddd;
   float: left;
@@ -375,37 +304,14 @@ img {
   display: inline;
   width: 100%;
 }
-#aa-header .aa-header-bottom .aa-header-bottom-area .aa-logo {
-  float: left;
-  margin-top: 4px;
+#aa-header .aa-header-bottom .aa-header-bottom-area .logo-aa {
+  width:100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#aa-header .aa-header-bottom .aa-header-bottom-area .aa-logo a {
-  font-family: "Raleway", sans-serif;
-  font-size: 28px;
-}
-#aa-header .aa-header-bottom .aa-header-bottom-area .aa-logo a:hover {  
-  color: #333;
-}
-#aa-header .aa-header-bottom .aa-header-bottom-area .aa-logo a > span {
-  display: inline-block;
-  float: left;
-  font-size: 50px;
-}
-#aa-header .aa-header-bottom .aa-header-bottom-area .aa-logo a p {
-  display: inline-block;
-  float: left;
-  font-weight: bold;
-  margin-bottom: 0;
-  margin-left: 5px;
-  margin-top: -5px;
-}
-#aa-header .aa-header-bottom .aa-header-bottom-area .aa-logo a p span {
-  display: block;
-  font-size: 12px;
-  font-weight: normal;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-}
+
 
 #aa-header .aa-header-bottom .aa-header-bottom-area .aa-search-box {
   float: right;
@@ -634,7 +540,6 @@ img {
 }
 #menu .menu-area .navbar-default .navbar-nav {
   display: inline-block;
-  float: left;
   margin: 0;
   text-align: center;
   width: 100%;
@@ -1394,7 +1299,7 @@ img {
 ====================*/
 
 #aa-support {
-  background-color: #333;
+  background-color: black;
   display: inline;
   float: left;
   width: 100%;
@@ -1775,7 +1680,6 @@ img {
 }
 #aa-catg-head-banner .aa-catg-head-banner-area .aa-catg-head-banner-content {
   display: inline-block;
-  float: left;
   padding: 10% 0;
   text-align: center;
   width: 100%;
@@ -2034,7 +1938,7 @@ img {
 }
 #aa-product-category .aa-product-catg-content .aa-product-catg-body .aa-product-catg li {
   margin: 0 0 20px 30px;
-  width: 29.916%;
+  width: 28.916%;
 }
 #aa-product-category .aa-product-catg-content .aa-product-catg-body .aa-product-catg li .aa-product-descrip {
   display: none;
@@ -3000,7 +2904,6 @@ img {
   width: 100%;
 }
 .aa-blog-details .aa-blog-navigation .aa-blog-prev {
-  float: left;
   display: inline-block;
   color: #fff;
   font-weight: bold;
@@ -3013,7 +2916,6 @@ img {
   margin-right: 10px;
 }
 .aa-blog-details .aa-blog-navigation .aa-blog-next {
-  float: right;
   display: inline-block;
   color: #fff;
   font-weight: bold;
@@ -3066,7 +2968,6 @@ img {
 .aa-blog-details .aa-blog-comment-threat .comments .commentlist li .reply-btn {
   color: #fff;
   display: inline-block;
-  float: right;
   font-size: 15px;
   line-height: 16px;
   padding: 8px 12px;
@@ -3349,7 +3250,6 @@ img {
 /*==================
  FOOTER SECTION
 ====================*/
-
 #aa-footer {
   background-color: #222;
   display: inline;
@@ -3359,9 +3259,10 @@ img {
 #aa-footer .aa-footer-top {
   display: inline;
   float: left;
-  padding: 50px 0;
+  padding: 0;
   width: 100%;
   min-height: 100px;
+  background-color: black;
 }
 #aa-footer .aa-footer-top .aa-footer-top-area {
   display: inline;
@@ -3393,7 +3294,6 @@ img {
   margin-right: 5px;
 }
 #aa-footer .aa-footer-top .aa-footer-top-area .aa-footer-widget .aa-footer-social a {
-  border: 1px solid #888;
   color: #888;
   display: inline-block;
   font-size: 18px;
@@ -3401,11 +3301,6 @@ img {
   padding: 2px 0;
   text-align: center;
   width: 35px;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
 }
 #aa-footer .aa-footer-top .aa-footer-top-area .aa-footer-widget .aa-footer-social a:hover {
   color: #fff;
@@ -3426,7 +3321,6 @@ img {
 #aa-footer .aa-footer-bottom .aa-footer-bottom-area > p {
   color: #888;
   display: inline-block;
-  float: left;
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 1px;
@@ -3775,7 +3669,12 @@ img {
     top: 15%;
     width: 90%;
   }
-
+  #aa-subscribe .aa-subscribe-area .aa-subscribe-form{
+    width: 347px;
+  }
+  .display-mobile{
+    display: none;
+  }
   #aa-slider .aa-slider-area .seq-title h2 {
     font-size: 25px;
     line-height: 30px;
@@ -3943,7 +3842,7 @@ img {
     text-align: center;
     width: 100%;
   }
-
+  
   #aa-header .aa-header-bottom .aa-header-bottom-area .aa-logo a {
     display: inline-block;
   }
@@ -4149,7 +4048,7 @@ img {
   #aa-header .aa-header-bottom .aa-cartbox .aa-cartbox-summary::before {
     left: 52%;
   }
-
+  
   #aa-header .aa-header-top .aa-header-top-left .aa-language .btn {
     padding: 6px 1px;
     font-size: 10px;

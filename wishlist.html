@@ -4,8 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
-    <title>Daily Shop | Wishlist Page</title>
-    
+    <title>Sədərək Tekstil / Arzuladıqlarım</title>
+    <!-- Fav icon -->
+    <link rel="shortcut icon" href="./img/icons8-thread-96.png" type="image/x-icon">
+    <!--font awesome icon link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
     <!-- Font awesome -->
     <link href="css/font-awesome.css" rel="stylesheet">
     <!-- Bootstrap -->
@@ -40,300 +44,140 @@
   
 
   </head>
-  <body>  
-   <!-- wpf loader Two -->
-    <div id="wpf-loader-two">          
-      <div class="wpf-loader-two-inner">
-        <span>Loading</span>
-      </div>
-    </div> 
-    <!-- / wpf loader Two -->       
- <!-- SCROLL TOP BUTTON -->
-    <a class="scrollToTop" href="#"><i class="fa fa-chevron-up"></i></a>
-  <!-- END SCROLL TOP BUTTON -->
-
-
-  <!-- Start header section -->
-  <header id="aa-header">
-    <!-- start header top  -->
-    <div class="aa-header-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="aa-header-top-area">
-              <!-- start header top left -->
-              <div class="aa-header-top-left">
-                <!-- start language -->
-                <div class="aa-language">
-                  <div class="dropdown">
-                    <a class="btn dropdown-toggle" href="#" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                      <img src="img/flag/english.jpg" alt="english flag">ENGLISH
-                      <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                      <li><a href="#"><img src="img/flag/french.jpg" alt="">FRENCH</a></li>
-                      <li><a href="#"><img src="img/flag/english.jpg" alt="">ENGLISH</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <!-- / language -->
-
-                <!-- start currency -->
-                <div class="aa-currency">
-                  <div class="dropdown">
-                    <a class="btn dropdown-toggle" href="#" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                      <i class="fa fa-usd"></i>USD
-                      <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                      <li><a href="#"><i class="fa fa-euro"></i>EURO</a></li>
-                      <li><a href="#"><i class="fa fa-jpy"></i>YEN</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <!-- / currency -->
-                <!-- start cellphone -->
-                <div class="cellphone hidden-xs">
-                  <p><span class="fa fa-phone"></span>00-62-658-658</p>
-                </div>
-                <!-- / cellphone -->
-              </div>
-              <!-- / header top left -->
-              <div class="aa-header-top-right">
-                <ul class="aa-head-top-nav-right">
-                  <li><a href="account.html">My Account</a></li>
-                  <li class="hidden-xs"><a href="wishlist.html">Wishlist</a></li>
-                  <li class="hidden-xs"><a href="cart.html">My Cart</a></li>
-                  <li class="hidden-xs"><a href="checkout.html">Checkout</a></li>
-                  <li><a href="" data-toggle="modal" data-target="#login-modal">Login</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- / header top  -->
-    <!-- start header bottom  -->
-    <div class="aa-header-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="aa-header-bottom-area">
-              <!-- logo  -->
-              <div class="aa-logo">
-                <!-- Text based logo -->
-                <a href="index.html">
-                  <span class="fa fa-shopping-cart"></span>
-                  <p>daily<strong>Shop</strong> <span>Your Shopping Partner</span></p>
-                </a>
-                <!-- img based logo -->
-                <!-- <a href="index.html"><img src="img/logo.jpg" alt="logo img"></a> -->
-              </div>
-              <!-- / logo  -->
-               <!-- cart box -->
-              <div class="aa-cartbox">
-                <a class="aa-cart-link" href="#">
-                  <span class="fa fa-shopping-basket"></span>
-                  <span class="aa-cart-title">SHOPPING CART</span>
-                  <span class="aa-cart-notify">2</span>
-                </a>
-                <div class="aa-cartbox-summary">
-                  <ul>
-                    <li>
-                      <a class="aa-cartbox-img" href="#"><img src="img/woman-small-2.jpg" alt="img"></a>
-                      <div class="aa-cartbox-info">
-                        <h4><a href="#">Product Name</a></h4>
-                        <p>1 x $250</p>
-                      </div>
-                      <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
-                    </li>
-                    <li>
-                      <a class="aa-cartbox-img" href="#"><img src="img/woman-small-1.jpg" alt="img"></a>
-                      <div class="aa-cartbox-info">
-                        <h4><a href="#">Product Name</a></h4>
-                        <p>1 x $250</p>
-                      </div>
-                      <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
-                    </li>                    
-                    <li>
-                      <span class="aa-cartbox-total-title">
-                        Total
-                      </span>
-                      <span class="aa-cartbox-total-price">
-                        $500
-                      </span>
-                    </li>
-                  </ul>
-                  <a class="aa-cartbox-checkout aa-primary-btn" href="#">Checkout</a>
-                </div>
-              </div>
-              <!-- / cart box -->
-              <!-- search box -->
-              <div class="aa-search-box">
-                <form action="">
-                  <input type="text" name="" id="" placeholder="Search here ex. 'man' ">
-                  <button type="submit"><span class="fa fa-search"></span></button>
-                </form>
-              </div>
-              <!-- / search box -->             
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- / header bottom  -->
-  </header>
-  <!-- / header section -->
-  <!-- menu -->
-  <section id="menu">
-    <div class="container">
-      <div class="menu-area">
-        <!-- Navbar -->
-        <div class="navbar navbar-default" role="navigation">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>          
-          </div>
-          <div class="navbar-collapse collapse">
-            <!-- Left nav -->
-            <ul class="nav navbar-nav">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#">Men <span class="caret"></span></a>
-                <ul class="dropdown-menu">                
-                  <li><a href="#">Casual</a></li>
-                  <li><a href="#">Sports</a></li>
-                  <li><a href="#">Formal</a></li>
-                  <li><a href="#">Standard</a></li>                                                
-                  <li><a href="#">T-Shirts</a></li>
-                  <li><a href="#">Shirts</a></li>
-                  <li><a href="#">Jeans</a></li>
-                  <li><a href="#">Trousers</a></li>
-                  <li><a href="#">And more.. <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Sleep Wear</a></li>
-                      <li><a href="#">Sandals</a></li>
-                      <li><a href="#">Loafers</a></li>                                      
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li><a href="#">Women <span class="caret"></span></a>
-                <ul class="dropdown-menu">  
-                  <li><a href="#">Kurta & Kurti</a></li>                                                                
-                  <li><a href="#">Trousers</a></li>              
-                  <li><a href="#">Casual</a></li>
-                  <li><a href="#">Sports</a></li>
-                  <li><a href="#">Formal</a></li>                
-                  <li><a href="#">Sarees</a></li>
-                  <li><a href="#">Shoes</a></li>
-                  <li><a href="#">And more.. <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Sleep Wear</a></li>
-                      <li><a href="#">Sandals</a></li>
-                      <li><a href="#">Loafers</a></li>
-                      <li><a href="#">And more.. <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                          <li><a href="#">Rings</a></li>
-                          <li><a href="#">Earrings</a></li>
-                          <li><a href="#">Jewellery Sets</a></li>
-                          <li><a href="#">Lockets</a></li>
-                          <li class="disabled"><a class="disabled" href="#">Disabled item</a></li>                       
-                          <li><a href="#">Jeans</a></li>
-                          <li><a href="#">Polo T-Shirts</a></li>
-                          <li><a href="#">SKirts</a></li>
-                          <li><a href="#">Jackets</a></li>
-                          <li><a href="#">Tops</a></li>
-                          <li><a href="#">Make Up</a></li>
-                          <li><a href="#">Hair Care</a></li>
-                          <li><a href="#">Perfumes</a></li>
-                          <li><a href="#">Skin Care</a></li>
-                          <li><a href="#">Hand Bags</a></li>
-                          <li><a href="#">Single Bags</a></li>
-                          <li><a href="#">Travel Bags</a></li>
-                          <li><a href="#">Wallets & Belts</a></li>                        
-                          <li><a href="#">Sunglases</a></li>
-                          <li><a href="#">Nail</a></li>                       
-                        </ul>
-                      </li>                   
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li><a href="#">Kids <span class="caret"></span></a>
-                <ul class="dropdown-menu">                
-                  <li><a href="#">Casual</a></li>
-                  <li><a href="#">Sports</a></li>
-                  <li><a href="#">Formal</a></li>
-                  <li><a href="#">Standard</a></li>                                                
-                  <li><a href="#">T-Shirts</a></li>
-                  <li><a href="#">Shirts</a></li>
-                  <li><a href="#">Jeans</a></li>
-                  <li><a href="#">Trousers</a></li>
-                  <li><a href="#">And more.. <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Sleep Wear</a></li>
-                      <li><a href="#">Sandals</a></li>
-                      <li><a href="#">Loafers</a></li>                                      
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li><a href="#">Sports</a></li>
-             <li><a href="#">Digital <span class="caret"></span></a>
-                <ul class="dropdown-menu">                
-                  <li><a href="#">Camera</a></li>
-                  <li><a href="#">Mobile</a></li>
-                  <li><a href="#">Tablet</a></li>
-                  <li><a href="#">Laptop</a></li>                                                
-                  <li><a href="#">Accesories</a></li>                
-                </ul>
-              </li>
-              <li><a href="#">Furniture</a></li>            
-              <li><a href="blog-archive.html">Blog <span class="caret"></span></a>
-                <ul class="dropdown-menu">                
-                  <li><a href="blog-archive.html">Blog Style 1</a></li>
-                  <li><a href="blog-archive-2.html">Blog Style 2</a></li>
-                  <li><a href="blog-single.html">Blog Single</a></li>                
-                </ul>
-              </li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="#">Pages <span class="caret"></span></a>
-                <ul class="dropdown-menu">                
-                  <li><a href="product.html">Shop Page</a></li>
-                  <li><a href="product-detail.html">Shop Single</a></li>                
-                  <li><a href="404.html">404 Page</a></li>                
-                </ul>
-              </li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div> 
-      </div>
-    </div>
-  </section>
-  <!-- / menu -->  
+   <!-- !Important notice -->
+  <!-- Only for product page body tag have to added .productPage class -->
+  <body class="productPage">  
+    <!-- wpf loader Two -->
+     <div id="wpf-loader-two">          
+       <div class="wpf-loader-two-inner">
+         <span>Gözləyin</span>
+       </div>
+     </div> 
+     <!-- / wpf loader Two -->       
+  <!-- SCROLL TOP BUTTON -->
+     <a class="scrollToTop" href="#"><i class="fa fa-chevron-up"></i></a>
+   <!-- END SCROLL TOP BUTTON -->
  
-  <!-- catg header banner section -->
-  <section id="aa-catg-head-banner">
-   <img src="img/fashion/fashion-header-bg-8.jpg" alt="fashion img">
-   <div class="aa-catg-head-banner-area">
-     <div class="container">
-      <div class="aa-catg-head-banner-content">
-        <h2>Wishlist Page</h2>
-        <ol class="breadcrumb">
-          <li><a href="index.html">Home</a></li>                   
-          <li class="active">Wishlist</li>
-        </ol>
-      </div>
+ 
+   <!-- Start header section -->
+   <header id="aa-header">
+     <!-- start header top  -->
+     <div class="aa-header-top">
+       <div class="container">
+         <div class="row">
+           <div class="col-md-12">
+             <div class="aa-header-top-area">
+               <!-- start header top left -->
+               <div class="aa-header-top-left">
+                 <!-- start language -->
+                 <div class="aa-language">
+                   <div class="dropdown">
+                     <a class="btn dropdown-toggle" href="#" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                       <img src="img/flag/icons8-azerbaijan-96-removebg-preview (1).png" alt="az flag">AZ
+                       <span class="caret"></span>
+                     </a>
+                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                       <li>
+                         <a href="#"><img src="img/flag/icons8-russian-federation-96-removebg-preview.png" alt="">RU</a>
+                     </li>
+                     <li>
+                         <a href="#"><img src="img/flag/icons8-azerbaijan-96-removebg-preview (1).png" alt="">AZ</a>
+                     </li>
+                     </ul>
+                   </div>
+                 </div>
+                 <!-- / language -->
+ 
+                 <!-- start cellphone -->
+                 <div class="cellphone hidden-xs">
+                  <p><span class="fa fa-phone"></span>+994-51-623-19-93</p>
+                </div>
+                <div class="cellphone hidden-xs">
+                  <p><a href="https://wa.link/rcxn81"><span class="little-bit fa fa-whatsapp"></span></a></p>
+                </div>
+                <div class="cellphone hidden-xs">
+                  <p><a href="https://www.instagram.com/sederektekstil.az/"><span class="little-bit fa fa-instagram"></span></a></p>
+                </div>
+                 <!-- / cellphone -->
+               </div>
+               <!-- / header top left -->
+               <div class="aa-header-top-right">
+                 <ul class="aa-head-top-nav-right">
+                   <li class="hidden-xs"><a href="wishlist.html">Arzuladıqlarım</a></li>
+                   <li><a href="account.html">Hesabim</a></li>
+                   <li><a href="" data-toggle="modal" data-target="#login-modal">Daxil Ol</a></li>
+                   <!-- <li class="hidden-xs"><a href="cart.html">My Cart</a></li>
+                   <li class="hidden-xs"><a href="checkout.html">Checkout</a></li> -->
+                 </ul>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
      </div>
-   </div>
-  </section>
-  <!-- / catg header banner section -->
+     <!-- / header top  -->
+ 
+     <!-- start header bottom  -->
+     <div class="aa-header-bottom">
+                   <div class="aa-header-bottom-area">
+                       <!-- logo  -->
+                       <div class="logo-aa">
+                           <a href="index.html" class="logo">
+                               <img src="img/logo/logo.svg" alt="">
+                           </a>
+                       </div>
+                       <!-- / logo  -->
+                   </div>
+     <!-- / header bottom  -->
+   </header>
+   <!-- / header section -->
+   <!-- menu -->
+   <!-- Support section -->
+   <section id="aa-support">
+     <div class="container">
+         <div class="row">
+             <div class="col-md-12">
+                 <div class="aa-support-area">
+                     <!-- single support -->
+                     <div class="col-md-4 col-sm-4 col-xs-12">
+                         <div class="aa-support-single">
+                             <h2>1</h2>
+                             <h4>Arzuladığın məhsulu seç</h4>
+                             <p>Məhsulun xüsusiyyətlərini diqqətlə oxu.</p>
+                             <br>
+                             <i class="fas fa-gift" style="font-size:30px; color: #ff6666;"></i>
+                         </div>
+                     </div>
+                     <!-- single support -->
+                     <div class="col-md-4 col-sm-4 col-xs-12">
+                         <div class="aa-support-single">
+                             <h2>2</h2>
+                             <h4>Sifariş üçün zəng et</h4>
+                             <a href="https://wa.link/rcxn81">
+                                 <p>+994-51-623-19-93</p>
+                             </a>
+                             <br>
+                             <span class="fa fa-phone"></span>
+ 
+                             <!-- <a  href="https://wa.link/rcxn81"><p class="support-whatsapp">WhatsApp-a sürətli keçid</p></a> -->
+                         </div>
+                     </div>
+                     <!-- single support -->
+                     <div class="col-md-4 col-sm-4 col-xs-12">
+                         <div class="aa-support-single">
+                             <h2>3</h2>
+                             <h4>Biz sizə gətirək</h4>
+                             <p>Bakı şəhərində hər yerə</p>
+                             <br>
+                             <span class="fa fa-truck"></span>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </section>
+ <!-- / Support section -->
 
  <!-- Cart view section -->
  <section id="cart-view">
@@ -349,10 +193,9 @@
                       <tr>
                         <th></th>
                         <th></th>
-                        <th>Product</th>
-                        <th>Price</th>
-                        <th>Stock Status</th>
-                        <th></th>
+                        <th>Məhsul</th>
+                        <th>Qiymət</th>
+                        <th>Stokdakı Varlığı</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -361,24 +204,24 @@
                         <td><a href="#"><img src="img/man/polo-shirt-1.png" alt="img"></a></td>
                         <td><a class="aa-cart-title" href="#">Polo T-Shirt</a></td>
                         <td>$250</td>
-                        <td>In Stock</td>
-                        <td><a href="#" class="aa-add-to-cart-btn">Add To Cart</a></td>
+                        <td>Stokda Var</td>
+                        <!-- <td><a href="#" class="aa-add-to-cart-btn">Add To Cart</a></td> -->
                       </tr>
                       <tr>
                         <td><a class="remove" href="#"><fa class="fa fa-close"></fa></a></td>
                         <td><a href="#"><img src="img/man/polo-shirt-2.png" alt="img"></a></td>
                         <td><a class="aa-cart-title" href="#">Polo T-Shirt</a></td>
                         <td>$150</td>
-                        <td>In Stock</td>
-                        <td><a href="#" class="aa-add-to-cart-btn">Add To Cart</a></td>
+                        <td>Stokda Var</td>
+                        <!-- <td><a href="#" class="aa-add-to-cart-btn">Add To Cart</a></td> -->
                       </tr>
                       <tr>
                         <td><a class="remove" href="#"><fa class="fa fa-close"></fa></a></td>
                         <td><a href="#"><img src="img/man/polo-shirt-3.png" alt="img"></a></td>
                         <td><a class="aa-cart-title" href="#">Polo T-Shirt</a></td>
                         <td>$50</td>
-                        <td>In Stock</td>
-                        <td><a href="#" class="aa-add-to-cart-btn">Add To Cart</a></td>
+                        <td>Stokda Var</td>
+                        <!-- <td><a href="#" class="aa-add-to-cart-btn">Add To Cart</a></td> -->
                       </tr>                     
                       </tbody>
                   </table>
@@ -392,143 +235,66 @@
  </section>
  <!-- / Cart view section -->
 
-
-  <!-- Subscribe section -->
-  <section id="aa-subscribe">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="aa-subscribe-area">
-            <h3>Subscribe our newsletter </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, velit!</p>
-            <form action="" class="aa-subscribe-form">
-              <input type="email" name="" id="" placeholder="Enter your Email">
-              <input type="submit" value="Subscribe">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- / Subscribe section -->
-
-  <!-- footer -->  
-  <footer id="aa-footer">
-    <!-- footer bottom -->
-    <div class="aa-footer-top">
-     <div class="container">
-        <div class="row">
-        <div class="col-md-12">
-          <div class="aa-footer-top-area">
-            <div class="row">
-              <div class="col-md-3 col-sm-6">
-                <div class="aa-footer-widget">
-                  <h3>Main Menu</h3>
-                  <ul class="aa-footer-nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Our Services</a></li>
-                    <li><a href="#">Our Products</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                  </ul>
-                </div>
+ <footer id="aa-footer">
+  <!-- footer bottom -->
+  <div class="aa-footer-top" >
+   <div class="container"  >
+      <div>
+      <div class="col-md-12" >
+        <div class="aa-footer-top-area" >
+          <div style="display: flex; align-items:center; justify-content: space-around;"> 
+            <div class="col-md-3 col-sm-6 display-mobile" >
+              <div class="aa-footer-widget" >
+                <img src="img/logo/logo-footer.svg" >
               </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="aa-footer-widget">
-                  <div class="aa-footer-widget">
-                    <h3>Knowledge Base</h3>
-                    <ul class="aa-footer-nav">
-                      <li><a href="#">Delivery</a></li>
-                      <li><a href="#">Returns</a></li>
-                      <li><a href="#">Services</a></li>
-                      <li><a href="#">Discount</a></li>
-                      <li><a href="#">Special Offer</a></li>
-                    </ul>
-                  </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="aa-footer-widget" >
+                <div class="aa-footer-widget" >
+                  <h3>Bizimlə Əlaqəyə Keç</h3>
+                  <address>
+                    <p><span class="fa fa-phone"></span>+994 51 623-19-93</p>
+                    <p><span class="fa fa-envelope"></span>amiraslanov.amrakh@gmail.com</p>
+                  </address>
                 </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="aa-footer-widget">
-                  <div class="aa-footer-widget">
-                    <h3>Useful Links</h3>
-                    <ul class="aa-footer-nav">
-                      <li><a href="#">Site Map</a></li>
-                      <li><a href="#">Search</a></li>
-                      <li><a href="#">Advanced Search</a></li>
-                      <li><a href="#">Suppliers</a></li>
-                      <li><a href="#">FAQ</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="aa-footer-widget">
-                  <div class="aa-footer-widget">
-                    <h3>Contact Us</h3>
-                    <address>
-                      <p> 25 Astor Pl, NY 10003, USA</p>
-                      <p><span class="fa fa-phone"></span>+1 212-982-4589</p>
-                      <p><span class="fa fa-envelope"></span>dailyshop@gmail.com</p>
-                    </address>
-                    <div class="aa-footer-social">
+                <div class="aa-footer-social">
+                      <a href="#"><span class="fa fa-whatsapp"></span></a>
                       <a href="#"><span class="fa fa-facebook"></span></a>
-                      <a href="#"><span class="fa fa-twitter"></span></a>
-                      <a href="#"><span class="fa fa-google-plus"></span></a>
-                      <a href="#"><span class="fa fa-youtube"></span></a>
-                    </div>
-                  </div>
-                </div>
+                      <a href="#"><span class="fa fa-instagram"></span></a>
+                </div>  
               </div>
             </div>
           </div>
         </div>
       </div>
-     </div>
     </div>
-    <!-- footer-bottom -->
-    <div class="aa-footer-bottom">
-      <div class="container">
-        <div class="row">
-        <div class="col-md-12">
-          <div class="aa-footer-bottom-area">
-            <p>Designed by <a href="http://www.markups.io/">MarkUps.io</a></p>
-            <div class="aa-footer-payment">
-              <span class="fa fa-cc-mastercard"></span>
-              <span class="fa fa-cc-visa"></span>
-              <span class="fa fa-paypal"></span>
-              <span class="fa fa-cc-discover"></span>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-    </div>
-  </footer>
-  <!-- / footer -->
+   </div>
+  </div>
+</footer>
+<!-- / footer -->
   <!-- Login Modal -->  
   <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">                      
         <div class="modal-body">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4>Login or Register</h4>
+          <h4>Daxil ol</h4>
           <form class="aa-login-form" action="">
-            <label for="">Username or Email address<span>*</span></label>
-            <input type="text" placeholder="Username or email">
-            <label for="">Password<span>*</span></label>
-            <input type="password" placeholder="Password">
-            <button class="aa-browse-btn" type="submit">Login</button>
-            <label for="rememberme" class="rememberme"><input type="checkbox" id="rememberme"> Remember me </label>
-            <p class="aa-lost-password"><a href="#">Lost your password?</a></p>
+            <label for="">E-mail<span>*</span></label>
+            <input type="text" placeholder="E-mail">
+            <label for="">Şifrə<span>*</span></label>
+            <input type="password" placeholder="Şifrə">
+            <button class="aa-browse-btn" type="submit">Daxil ol</button>
+            <label for="rememberme" class="rememberme"><input type="checkbox" id="rememberme"> Məni Xatırla </label>
+            <p class="aa-lost-password"><a href="#">Şifrəni unutdun?</a></p>
             <div class="aa-register-now">
-              Don't have an account?<a href="account.html">Register now!</a>
+              Hələdə hesabın yoxdur?<a href="account.html">Qeydiyyatdan keç!</a>
             </div>
           </form>
         </div>                        
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
   </div>
-
 
 
   <!-- jQuery library -->
