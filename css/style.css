@@ -1221,7 +1221,7 @@ img {
 }
 #quick-view-modal .modal-content .aa-product-view-content .aa-prod-quantity form select {
   height: 25px;
-  width: 40px;
+  width: 100px;
 }
 #quick-view-modal .modal-content .aa-product-view-content .aa-prod-quantity .aa-prod-category {
   display: inline-block;
