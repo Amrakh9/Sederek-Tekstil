@@ -3344,7 +3344,11 @@ img {
 #aa-footer .aa-footer-bottom .aa-footer-bottom-area .aa-footer-payment span:hover {
   color: #fff;
 }
-
+.aa-footer-left-area{
+  display: flex; 
+  align-items:center; 
+  justify-content: space-around;
+}
 /*==================
  RESPONSIVE DESIGN
 ====================*/
