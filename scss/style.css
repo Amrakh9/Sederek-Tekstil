@@ -816,12 +816,6 @@ img {
   height: 300px;
 }
 
-.aa-product-catg li figure .aa-product-img {
-  background-color: #f9f9fb;
-  display: block;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
 
 .aa-product-catg li figure .aa-add-card-btn {
   background: #000 none repeat scroll 0 0;
@@ -1989,11 +1983,23 @@ img {
 }
 
 #aa-product-category .aa-product-catg-content .aa-product-catg-body .list li figure .aa-product-img {
+  display: block;
   float: left;
   width: 35%;
+  height: 60%;
   margin-right: 40px;
+  border-radius: 2px;
 }
-
+.aa-product-catg li figure .aa-product-img {
+  background-color: #f9f9fb;
+  display: block;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.cerceve{
+  width: 35%;
+  height: 70%;
+}
 #aa-product-category .aa-product-catg-content .aa-product-catg-body .list li figure .aa-add-card-btn {
   bottom: 35%;
   left: 40%;
@@ -3686,6 +3692,10 @@ img {
   #aa-client-brand .aa-client-brand-area .aa-client-brand-slider .slick-next {
     right: -15px;
   }
+  #aa-product-category .aa-product-catg-content .aa-product-catg-body .list li figure .aa-product-img img {
+    max-width:100%;
+    max-height:100%;
+  }
   #aa-slider .aa-slider-area .seq-title h2 {
     line-height: 50px;
   }
@@ -3753,7 +3763,8 @@ img {
     width: 42%;
   }
   #aa-product-category .aa-product-catg-content .aa-product-catg-body .list li figure .aa-product-img img {
-    max-width: 100%;
+    max-width:100%;
+    max-height:100%;
   }
   #aa-product-category .aa-product-catg-content .aa-product-catg-body .list li figure .aa-product-descrip {
     padding-right: 25px;
